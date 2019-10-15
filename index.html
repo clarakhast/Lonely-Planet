@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lonely Planet</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Trip of the Week | Lonely Planet</title>
+    <meta name="description" content="Looking for a great holiday without having to worry about your
+    finances? Here is the best budget destination of this week.">
+    <meta name="author" content="Clara Khast">    
+    <link rel="stylesheet" href="css/style.css?v=1.0">
+    <link rel="stylesheet" href="css/reset.css?v=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -16,15 +21,15 @@
                 <img class="logo" src="img/logo.png" alt="lonely planet logo">
            </div> 
            <ul class="menu">
-                <li><a href="#">Flights</a></li>
-                <li><a href="#">Hotels</a></li>
-                <li><a href="#">Discover</a></li>
-                <li><a href="#">Deals</a></li>
-                <li><a href="#">Destinations</a></li>
+                <li><a href="#"><i class="fas fa-plane"></i>Flights</a></li>
+                <li><a href="#"><i class="fas fa-hotel"></i> Hotels</a></li>
+                <li><a href="#"><i class="fas fa-globe-americas"></i> Discover</a></li>
+                <li><a href="#"><i class="fas fa-tags"></i> Deals</a></li>
+                <li><a href="#"><i class="fas fa-map-pin"></i> Destinations</a></li>
             </ul>
             <div class="btn-container">
-                <button>Search</button>
-                <button>Login</button>
+                <button><i class="fas fa-search"></i></button>
+                <button><i class="fas fa-sign-in-alt"></i> Login</button>
             </div>
         </nav>
     </header>
@@ -41,12 +46,12 @@
                 
             </div>
             <div class="recommended-text">
-                <h1>Recommendation of the Week</h1>
+                <h1>Trip of the Week</h1>
                 <p>Looking for a great holiday without having to worry about your
                 finances? Here is the best budget destination of this week. </p>
                 <ul>
-                    <li><a href="#">Search Flights</a></li>
-                    <li><a href="#">Search Hotels</a></li>
+                    <li><a href="#"><i class="fas fa-plane"></i> Search Flights</a></li>
+                    <li><a href="#"><i class="fas fa-hotel"></i>Search Hotels</a></li>
                 </ul>
             </div>
         </section>
@@ -55,9 +60,10 @@
             <h2>Top Picks for You</h2>
             <div class="top-container">
                     <div class="top-hotel">
-                        <h3>Alma Barcelona Hotel</h3>
+                        <h3>Best Hotel</h3>
+                        <!-- <h3>Alma Barcelona Hotel</h3> -->
                         <img src="img/stars.png" alt="5 stars">
-                        <img src="img/alma-hotel.jpg" alt="Alma Barcelona Hotel">
+                        <img src="img/alma-hotel.jpg" alt="Alma Barcelona Hotel" class="alma">
                         <div class="general-info-hotel">
                             <div>
                                 <p class="inline rate">9.8</p>
@@ -94,42 +100,58 @@
                     </div>
             
                     <div class="top-flight">
-                            <h3>Alma Barcelona Hotel</h3>
-                            <img src="img/stars.png" alt="5 stars">
-                            <img src="img/alma-hotel.jpg" alt="Alma Barcelona Hotel">
-                            <div class="general-info-hotel">
-                                <div>
-                                    <p class="inline rate">9.8</p>
-                                    <p class="bold inline">Excellent</p>
-                                    <p>Based on 1250 reviews.</p>
-                                </div>
-                                <div>
-                                    <p class="bold">Location</p>
-                                    <p>Dreta de l'Eixample</p>
-                                </div>
-                            </div>
-                            <h4>Features:</h4>
+                        <h3>Best Flight</h3>
+                        <div class="flight-info">
+                            <img class="tap-logo" src="img/tap.png" alt="Tap logo">
+                            <p>9:50 PM <i class="fas fa-arrow-right"></i> 10:05 AM</p>
+                            <p>Direct</p>
+                            <p>7h 45m</p>
+                        </div>
+                        
+                        <div class="flight-sub">
+                            <p>TAP Air Portugal</p>
+                            <p>YYZ - BCN</p>
+                        </div>
+
+                        <div class="flight-info">
+                            <img class="tap-logo" src="img/tap.png" alt="Tap logo">
+                            <p>9:50 PM <i class="fas fa-arrow-right"></i> 10:05 AM</p>
+                            <p>Direct</p>
+                            <p>8h 45m</p>
+                        </div>
+                            
+                        <div class="flight-sub">
+                            <p>TAP Air Portugal</p>
+                            <p> BCN - YYZ</p>
+                        </div>
+
+                        <div class="flight-info">
+                            <img class="tap-logo" src="img/tap.png" alt="Tap logo">
+                            <p>9:50 PM <i class="fas fa-arrow-right"></i> 10:05 AM</p>
+                            <p>Direct</p>
+                            <p>7h 45m</p>
+                        </div>
+                            
+                        <div class="flight-sub">
+                            <p>TAP Air Portugal</p>
+                            <p>YYZ - BCN</p>
+                        </div>
     
-                            <div class="hotel-features">
-                                <div class="feature-img">
-                                    <img src="img/pool.png" alt="pool">
-                                    <p>Pool</p>
-                                </div>
-                                <div class="feature-img">
-                                    <img src="img/spa.png" alt="spa">
-                                    <p>Spa</p>
-                                </div>
-                                <div class="feature-img">
-                                    <img src="img/gym.png" alt="gym">
-                                    <p>Gym</p>
-                                </div>
-                                <div class="feature-img">
-                                    <img src="img/food.png" alt="restaurant">
-                                    <p>Restaurant</p>
-                                </div> 
-                            </div>
-                            <p class="price">CAD 198</p>
-                            <a  class="book-btn"href="#">Book Now</a>
+                        <div class="flight-info">
+                            <img class="tap-logo" src="img/tap.png" alt="Tap logo">
+                            <p>9:50 PM <i class="fas fa-arrow-right"></i> 10:05 AM</p>
+                            <p>Direct</p>
+                            <p>8h 45m</p>
+                        </div>
+                                
+                        <div class="flight-sub">
+                            <p>TAP Air Portugal</p>
+                            <p> BCN - YYZ</p>
+                        </div>
+
+
+                        <p class="price">CAD 698</p>
+                        <a  class="book-btn"href="#">Book Now</a>
                     </div>
             </div>         
         </section>
@@ -179,7 +201,7 @@
             <div class="comment-container">
                 <div class="comment-image-container">
                     <div><img src="img/user.jpeg" alt="user image" class="user-image"></div> 
-                    <p class="user-name">Francine S</p>
+                    <p class="user-name">Francine</p>
                 </div>
                 <div class="user-comment">
                     <div class="user-rate">
@@ -201,7 +223,7 @@
             <div class="comment-container">
                     <div class="comment-image-container">
                         <div><img src="img/user.jpeg" alt="user image" class="user-image"></div> 
-                        <p class="user-name">Francine S</p>
+                        <p class="user-name">Francine</p>
                     </div>
                     <div class="user-comment">
                         <div class="user-rate">
@@ -223,7 +245,7 @@
                 <div class="comment-container">
                         <div class="comment-image-container">
                             <div><img src="img/user.jpeg" alt="user image" class="user-image"></div> 
-                            <p class="user-name">Francine S</p>
+                            <p class="user-name">Francine</p>
                         </div>
                         <div class="user-comment">
                             <div class="user-rate">
@@ -246,7 +268,7 @@
                     <div class="comment-container comment">
                             <div class="comment-image-container">
                                 <div><img src="img/user.jpeg" alt="user image" class="user-image user-comment-image"></div> 
-                                <p class="user-name name">Francine S</p>
+                                <p class="user-name name">Francine</p>
                             </div>
                             <div class="user-comment">
                                 <div class="user-rate">
@@ -259,8 +281,8 @@
                                 </div>
                                 
                                 <ul class="comment-edit">
-                                    <li><a class="btn" href="#">Add a photo</a></li>
-                                    <li><a class="btn" href="#">Send</a></li>
+                                    <li><a class="btn" href="#"><i class="fas fa-paperclip"></i> Add a photo</a></li>
+                                    <li><a class="btn" href="#"><i class="far fa-paper-plane"></i> Send</a></li>
                                 </ul>
                             </div>
                         </div>
