@@ -1,0 +1,349 @@
+*{
+    font-family: arial;
+}
+.navbar {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.menu {
+    display:flex;
+    justify-content: space-evenly;
+    padding:2rem;
+    color: black;
+    font-weight: bold;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold
+}
+
+.logo {
+    max-height: 8rem;
+}
+
+.btn-container button {
+    border: none;
+    background-color: transparent;
+    padding: 2rem 0.5rem;
+    font-weight: bold;
+}
+
+.btn-container {
+    text-align: right;
+}
+
+.recommendation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ccc;
+    padding: 2rem 0;
+}
+
+.recommended {
+    text-align: center;
+}
+
+.recommended-img{
+    border: 1px solid transparent;
+    border-radius: 100%;
+    max-height: 20rem;
+    margin-bottom:1rem;
+}
+
+.rating img {
+    max-height: 2rem;
+}
+
+.rating{
+    text-align: center;
+}
+
+.rating a {
+    color: black;
+}
+
+.recommended-text {
+    padding-right: 2rem;
+}
+
+.recommended-text h1 {
+    font-weight:bold;
+    font-size: 2rem;
+    padding: 1.2rem 0;
+
+}
+
+.recommended-text p {
+    font-size: 1.4rem;
+    line-height: 2rem;;
+}
+
+.recommended-text ul li {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border:0.01rem solid black;
+    margin: 2rem 0.5rem;
+}
+
+.recommended-text ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.top-picks {
+    padding:2rem 9rem;
+    text-align: center;
+}
+
+.top-picks h2 {
+    font-weight:bold;
+    font-size: 1.8rem;
+}
+
+.top-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+.top-hotel, .top-flight {
+    border: 0.01rem solid black;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+
+.general-info-hotel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem;
+    line-height: 2rem;
+}
+
+.top-hotel h4 {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.inline {
+    display: inline;
+}
+
+.rate {
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    padding: 0.5rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.hotel-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight:bold;
+    display: block;
+    padding: 1.2rem 0;
+}
+
+.book-btn {
+    background-color: black;
+    color: white;
+    font-weight:bold;
+    text-decoration: none;
+    padding: 1.3rem;
+    display: block;
+}
+
+.about-place h2 {
+    font-weight:bold;
+    font-size: 1.8rem;
+    text-align:center;
+    margin-bottom: 2rem;
+}
+
+.about-place {
+    padding: 2rem 4rem;
+    background-color:#ccc;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.about-place img {
+    border: 1px solid transparent;
+    border-radius: 100%;
+    max-height: 28rem;
+    margin-bottom:1rem;
+}
+
+.place {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+    grid-gap: 1em;
+}
+
+.place h3 {
+    font-weight:bold;
+    font-size: 1.4rem;
+    margin-bottom:1.5rem;
+}
+
+.att-img-container {
+    text-align: center;;
+}
+
+.review h2{
+    font-weight:bold;
+    font-size:1.8rem;
+    text-align: center;
+    margin-bottom:2rem;
+}
+
+.review {
+    padding: 3rem 0;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.comment-container{
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap:2rem;
+    margin: 1rem 0;
+}
+
+.comment-image-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.review-img {
+    max-height: 8rem;
+}
+
+.user-image {
+    max-height: 5rem;
+    border-radius: 50%;
+
+}
+
+.user-name{
+    padding-top: 2rem;
+    font-weight:bold;
+}
+
+.user-rate{
+    display:flex;
+    justify-content: left;
+    margin-bottom:1.5rem;
+}
+
+.stars{
+    max-height: 2rem;
+}
+
+.user-rate p{
+    align-self: center;
+    padding-left:1.5rem;
+}
+
+.user-comment>p {
+    margin-bottom: 1.5rem;
+}
+
+.comment-reply li a{
+    text-decoration:none;
+    color:black;
+    font-size: 0.8rem;
+    font-weight:bold;
+    padding: 0 0.5rem;
+}
+
+.comment-reply li {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.user{
+    border-radius:50%;
+    max-height: 3rem;
+}
+
+.user-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.user-comment-image{
+    max-height:3rem;
+}
+
+.name{
+    font-size: 0.8rem;
+    padding-top: 1rem;
+}
+
+.comment{
+    margin-top: 3rem;
+}
+
+.user-rate-star{
+    max-height:1.3rem;
+}
+
+.user-rate {
+    margin-bottom:0.8rem;
+}
+
+::placeholder{
+    padding: 0.5rem;
+}
+
+textarea{
+    width: 100%;
+}
+
+.comment-edit li {
+    display: inline-block;
+}
+
+.comment-edit{
+    margin-top: 2rem;
+    text-align: right;
+}
+
+.btn {
+    padding: 1rem;
+    border:0.01rem solid black;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #ccc;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding:3rem;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight:bold;
+    font-size: 0.8rem;
+    justify-self: center;
+}
+
+.footer ul{
+    margin: 0 auto;
+}
