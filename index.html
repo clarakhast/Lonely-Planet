@@ -8,190 +8,204 @@
     <title>Trip of the Week | Lonely Planet</title>
     <meta name="description" content="Looking for a great holiday without having to worry about your
     finances? Here is the best budget destination of this week.">
-    <meta name="author" content="Clara Khast">    
+    <meta name="author" content="Clara Khast">
     <link rel="stylesheet" href="css/style.css?v=1.0">
-    <link rel="stylesheet" href="css/reset.css?v=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/reset.css?v=1.0"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-           <div class="logo-container">
+            <div class="logo-container">
                 <img class="logo" src="img/logo.png" alt="lonely planet logo">
-           </div> 
-           <ul class="menu">
-                <li><a href="#"><i class="fas fa-plane"></i>Flights</a></li>
-                <li><a href="#"><i class="fas fa-hotel"></i> Hotels</a></li>
-                <li><a href="#"><i class="fas fa-globe-americas"></i> Discover</a></li>
-                <li><a href="#"><i class="fas fa-tags"></i> Deals</a></li>
-                <li><a href="#"><i class="fas fa-map-pin"></i> Destinations</a></li>
-            </ul>
-            <div class="btn-container">
-                <button><i class="fas fa-search"></i></button>
-                <button><i class="fas fa-sign-in-alt"></i> Login</button>
             </div>
+
+            <div class="nav-menu">
+                <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
+
+            <ul class="menu-top">
+                <li><a href="#" class="nav-item">Flights</a></li>
+                <li><a href="#" class="nav-item">Hotels</a></li>
+                <li><a href="#" class="nav-item">Discover</a></li>
+                <li><a href="#" class="nav-item">Deals</a></li>
+                <li><a href="#" class="nav-item">Destinations</a></li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><a href="#"><i class="fas fa-user"></i></a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section class="recommendation">
-            <div class="recommended">
-                <img class="recommended-img" src="img/barcelona.jpg" alt="barcelona">
+        <section class="intro">
+            <div class="intro-container">
+                <img class="intro-img" src="img/barcelona.jpg" alt="barcelona">
 
                 <div class="rating">
-                    <img src="img/stars.png" alt="stars">
-                    <a href="#">(102 Reviews)</a>
+                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><a href="#">(102 Reviews)</a></p>
                 </div>
-                
+
             </div>
-            <div class="recommended-text">
+            <div class="intro-text">
                 <h1>Trip of the Week</h1>
                 <p>Looking for a great holiday without having to worry about your
-                finances? Here is the best budget destination of this week. </p>
-                <ul>
+                    finances? Here is the best budget destination of this week. </p>
+                <ul class="button">
                     <li><a href="#"><i class="fas fa-plane"></i> Search Flights</a></li>
-                    <li><a href="#"><i class="fas fa-hotel"></i>Search Hotels</a></li>
+                    <li><a href="#"><i class="fas fa-hotel"></i> Search Hotels</a></li>
                 </ul>
             </div>
         </section>
 
-        <section class="top-picks">
+        <section class="holiday-package">
             <h2>Top Picks for You</h2>
-            <div class="top-container">
-                    <div class="top-hotel">
-                        <h3>Best Hotel</h3>
-                        <!-- <h3>Alma Barcelona Hotel</h3> -->
-                        <img src="img/stars.png" alt="5 stars">
-                        <img src="img/alma-hotel.jpg" alt="Alma Barcelona Hotel" class="alma">
-                        <div class="general-info-hotel">
-                            <div>
-                                <p class="inline rate">9.8</p>
-                                <p class="bold inline">Excellent</p>
-                                <p>Based on 1250 reviews.</p>
-                            </div>
-                            <div>
-                                <p class="bold">Location</p>
-                                <p>Dreta de l'Eixample</p>
-                            </div>
-                        </div>
-                        <h4>Features:</h4>
+            <div class="holiday-container">
+                <div class="top hotel">
+                    <h3>Best Hotel</h3>
+                    <h4>Alma Barcelona Hotel <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h4>
+                    <img src="img/alma-hotel.jpg" alt="Alma Barcelona Hotel" class="alma">
 
-                        <div class="hotel-features">
-                            <div class="feature-img">
-                                <img src="img/pool.png" alt="pool">
-                                <p>Pool</p>
-                            </div>
-                            <div class="feature-img">
-                                <img src="img/spa.png" alt="spa">
-                                <p>Spa</p>
-                            </div>
-                            <div class="feature-img">
-                                <img src="img/gym.png" alt="gym">
-                                <p>Gym</p>
-                            </div>
-                            <div class="feature-img">
-                                <img src="img/food.png" alt="restaurant">
-                                <p>Restaurant</p>
-                            </div> 
+                    <div class="hotel-info">
+                        <div>
+                            <p class="bold">
+                                <span class="rate">9.8</span> Excellent </p>
+                            <p>Based on 1250 reviews.</p>
                         </div>
-                        <p class="price">CAD 198</p>
-                        <a  class="book-btn"href="#">Book Now</a>
+                        <div>
+                            <p class="bold">Location</p>
+                            <p>Dreta de l'Eixample</p>
+                        </div>
                     </div>
-            
-                    <div class="top-flight">
-                        <h3>Best Flight</h3>
-                        <div class="flight-info">
-                            <img class="tap-logo" src="img/tap.png" alt="Tap logo">
-                            <p>9:50 PM <i class="fas fa-arrow-right"></i> 10:05 AM</p>
-                            <p>Direct</p>
-                            <p>7h 45m</p>
-                        </div>
-                        
-                        <div class="flight-sub">
-                            <p>TAP Air Portugal</p>
-                            <p>YYZ - BCN</p>
-                        </div>
+                    <h5>Features:</h5>
 
-                        <div class="flight-info">
-                            <img class="tap-logo" src="img/tap.png" alt="Tap logo">
-                            <p>9:50 PM <i class="fas fa-arrow-right"></i> 10:05 AM</p>
-                            <p>Direct</p>
-                            <p>8h 45m</p>
+                    <div class="hotel-features">
+                        <div class="feature-img">
+                            <img src="img/pool.png" alt="pool">
+                            <p>Pool</p>
                         </div>
-                            
-                        <div class="flight-sub">
-                            <p>TAP Air Portugal</p>
-                            <p> BCN - YYZ</p>
+                        <div class="feature-img">
+                            <img src="img/spa.png" alt="spa">
+                            <p>Spa</p>
                         </div>
-
-                        <div class="flight-info">
-                            <img class="tap-logo" src="img/tap.png" alt="Tap logo">
-                            <p>9:50 PM <i class="fas fa-arrow-right"></i> 10:05 AM</p>
-                            <p>Direct</p>
-                            <p>7h 45m</p>
+                        <div class="feature-img">
+                            <img src="img/gym.png" alt="gym">
+                            <p>Gym</p>
                         </div>
-                            
-                        <div class="flight-sub">
-                            <p>TAP Air Portugal</p>
-                            <p>YYZ - BCN</p>
+                        <div class="feature-img">
+                            <img src="img/food.png" alt="restaurant">
+                            <p>Restaurant</p>
                         </div>
-    
-                        <div class="flight-info">
-                            <img class="tap-logo" src="img/tap.png" alt="Tap logo">
-                            <p>9:50 PM <i class="fas fa-arrow-right"></i> 10:05 AM</p>
-                            <p>Direct</p>
-                            <p>8h 45m</p>
-                        </div>
-                                
-                        <div class="flight-sub">
-                            <p>TAP Air Portugal</p>
-                            <p> BCN - YYZ</p>
-                        </div>
-
-
-                        <p class="price">CAD 698</p>
-                        <a  class="book-btn"href="#">Book Now</a>
                     </div>
-            </div>         
+
+                    <div class="price-container">
+                        <p class="price bold">Total Price: CAD 198</p>
+                        <div><a class="book-btn bold" href="#">Book Now</a></div>
+                    </div>
+                </div>
+
+                <div class="top flight">
+                    <h3>Best Flight</h3>
+                    <h4>TAP Air Portugal <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h4>
+                    <ol class="flight-info">
+                        <li><img class="tap-logo" src="img/tap.png" alt="Tap logo"></li>
+                        <li>9:50 PM <i class="fas fa-arrow-right"></i> 10:05 AM</li>
+                        <li>Direct</li>
+                        <li>7 Hours 45 Minutes</li>
+                    </ol>
+
+                    <ol class="flight-sub">
+                        <li>TAP Air Portugal</li>
+                        <li>YYZ - BCN</li>
+                    </ol>
+
+                    <ol class="flight-info">
+                        <li><img class="tap-logo" src="img/tap.png" alt="Tap logo"></li>
+                        <li>9:50 PM <i class="fas fa-arrow-right"></i> 10:05 AM</li>
+                        <li>Direct</li>
+                        <li>7 Hours 45 Minutes</li>
+                    </ol>
+
+                    <ol class="flight-sub">
+                        <li>TAP Air Portugal</li>
+                        <li>YYZ - BCN</li>
+                    </ol>
+
+                    <h5>Business Class Features:</h5>
+                    <div class="hotel-features">
+                        <div class="feature-img">
+                            <img src="img/bags.png" alt="luggage">
+                            <p>Free checked bag</p>
+                        </div>
+                        <div class="feature-img">
+                            <img src="img/seat.png" alt="airplane seat">
+                            <p>Free seat choice</p>
+                        </div>
+                        <div class="feature-img">
+                            <img src="img/upgrade.png" alt="upgrade">
+                            <p>Upgrade eligible</p>
+                        </div>
+                        <div class="feature-img">
+                            <img src="img/boarding.png" alt="boarding pass">
+                            <p>General boarding</p>
+                        </div>
+                    </div>
+                    <div class="price-container">
+                        <p class="price">Total Price: CAD 1098</p>
+                        <div><a class="book-btn" href="#">Book Now</a></div>
+                    </div>
+
+                    <h5>Economy Class Features:</h5>
+                    <div class="hotel-features">
+                        <div class="feature-img">
+                            <img src="img/bags.png" alt="luggage">
+                            <p>Pay to check bags</p>
+                        </div>
+                        <div class="feature-img">
+                            <img src="img/seat.png" alt="airplane seat">
+                            <p>Pay to choose seats</p>
+                        </div>
+                        <div class="feature-img">
+                            <img src="img/upgrade.png" alt="upgrade">
+                            <p>Not eligible for upgrades</p>
+                        </div>
+                        <div class="feature-img">
+                            <img src="img/boarding.png" alt="boarding pass">
+                            <p>Board in last group</p>
+                        </div>
+                    </div>
+                    <div class="price-container">
+                        <p class="price">Total Price: CAD 998</p>
+                        <div><a class="book-btn" href="#">Book Now</a></div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="about-place">
-            <h2>Barcelona Attractions</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti facere commodi explicabo qui, ratione ipsum incidunt modi quasi aliquid dolor provident cupiditate aspernatur? Eius quisquam architecto, ipsam expedita doloremque sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consequuntur, earum sunt sapiente dignissimos similique, harum vitae voluptas magnam aliquam voluptate repellat nesciunt necessitatibus tenetur vel minus molestiae illo saepe? </p>
-
-            <div class="tourist-attractions">
-                <div class="place one">
-                    <div>
-                        <h3>Place One</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus omnis quibusdam, aut itaque culpa voluptates praesentium incidunt nam ea quo ullam deleniti eius temporibus suscipit officiis iste, sapiente libero! Ratione.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit minima natus nulla, esse ab ex ipsa sunt neque sint nemo sed. Quae saepe aliquam natus ad dolor commodi nihil. Animi!</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, earum aliquid quod ad fuga esse eum ullam nemo praesentium, quidem aliquam ab, similique dolor deserunt provident facere dicta reprehenderit voluptate?</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, quis exercitationem? Totam inventore rerum quis quas aut voluptates deserunt, molestiae similique cum temporibus laudantium natus dicta, illo repellat quia esse.</p>
-                    </div>
-                    <div class="att-img-container"><img class="att-img" src="img/barcelona.jpg" alt="place1"></div>
+        <section class="about-barcelona">
+            <h2>About Barcelona</h2>
+            <div class="about-content">
+                <div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus omnis quibusdam, aut itaque culpa
+                        voluptates praesentium incidunt nam ea quo ullam deleniti eius temporibus suscipit <span
+                            class="italic bold">officiis iste, sapiente libero!</span> Ratione.</p>
+                    <p>Lorem ipsum adipisicing elit. Odit minima natus nulla, esse ab ex ipsa sunt neque sint nemo sed.
+                        Quae saepe aliquam natus ad dolor commodi nihil. Animi!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, <span
+                            class="bold italic">earum aliquid quod</span> ad fuga esse eum ullam nemo praesentium,
+                        quidem aliquam ab, similique dolor deserunt provident facere dicta reprehenderit voluptate?</p>
+                    <p>Lorem, ipsum dolor sit<span class="bold italic">amet consectetur adipisicing</span> elit. Odit,
+                        quis exercitationem? Totam inventore rerum quis quas aut voluptates deserunt, molestiae
+                        similique cum temporibus laudantium natus dicta, illo repellat quia esse.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptatibus vel repellendus
+                        asperiores atque tenetur <span class="italic bold">architecto voluptas culpa</span> error neque
+                        voluptates, similique eaque praesentium explicabo magnam suscipit obcaecati nostrum! Vero.</p>
                 </div>
-
-                <div class="place two">
-                    <div class="att-img-container"><img src="img/barcelona.jpg" alt="place1"></div>
-                    <div>
-                        <h3>Place Two</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus omnis quibusdam, aut itaque culpa voluptates praesentium incidunt nam ea quo ullam deleniti eius temporibus suscipit officiis iste, sapiente libero! Ratione.</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus omnis quibusdam, aut itaque culpa voluptates praesentium incidunt nam ea quo ullam deleniti eius temporibus suscipit officiis iste, sapiente libero! Ratione.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit minima natus nulla, esse ab ex ipsa sunt neque sint nemo sed. Quae saepe aliquam natus ad dolor commodi nihil. Animi!</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, earum aliquid quod ad fuga esse eum ullam nemo praesentium, quidem aliquam ab, similique dolor deserunt provident facere dicta reprehenderit voluptate?</p>
-                    </div>     
-                </div>
-
-                <div class="place three">
-                    <div>
-                        <h3>Place Three</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus omnis quibusdam, aut itaque culpa voluptates praesentium incidunt nam ea quo ullam deleniti eius temporibus suscipit officiis iste, sapiente libero! Ratione.</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus omnis quibusdam, aut itaque culpa voluptates praesentium incidunt nam ea quo ullam deleniti eius temporibus suscipit officiis iste, sapiente libero! Ratione.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit minima natus nulla, esse ab ex ipsa sunt neque sint nemo sed. Quae saepe aliquam natus ad dolor commodi nihil. Animi!</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, earum aliquid quod ad fuga esse eum ullam nemo praesentium, quidem aliquam ab, similique dolor deserunt provident facere dicta reprehenderit voluptate?</p>
-                    </div>
-                    <div class="att-img-container"><img src="img/barcelona.jpg" alt="place1"></div>
+                <div class="img-container"><img class="barcelona-img" src="img/barcelona.jpg" alt="barcelona night">
                 </div>
             </div>
         </section>
@@ -200,92 +214,117 @@
             <h2>Comments & Reviews</h2>
             <div class="comment-container">
                 <div class="comment-image-container">
-                    <div><img src="img/user.jpeg" alt="user image" class="user-image"></div> 
-                    <p class="user-name">Francine</p>
+                    <div><img src="img/user.jpeg" alt="user image" class="user-image"></div>
+                    <p class="user-name bold">Francine</p>
                 </div>
                 <div class="user-comment">
                     <div class="user-rate">
-                        <div><img src="img/stars.png" alt="stars" class="stars"></div>
-                        <p>09.29.2019</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i> 09.29.2019</p>
                     </div>
-                    
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, minima fugiat amet laudantium ut dolorum praesentium, exercitationem vero neque pariatur quo cumque. Ipsam laboriosam corrupti tempora est! Recusandae, explicabo minus.</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, minima fugiat amet laudantium ut
+                        dolorum praesentium, exercitationem vero neque pariatur quo cumque. Ipsam laboriosam corrupti
+                        tempora est! Recusandae, explicabo minus.</p>
                     <img class="review-img" src="img/review.jpg" alt="barcelona">
                     <img class="review-img" src="img/review-img.jpg" alt="barcelona">
                     <ul class="comment-reply">
-                            <li><a href="#">Reply</a></li>
-                            <li><a href="#">Like</a></li>
-                            <li><a href="#">Dislike</a></li>
-                        </ul>
+                        <li><a class="bold" href="#"><i class="fas fa-reply"></i> Reply</a></li>
+                        <li><a class="bold" href="#"><i class="fas fa-thumbs-up"></i> Like</a></li>
+                        <li><a class="bold" href="#"><i class="fas fa-thumbs-down"></i> Dislike</a></li>
+                    </ul>
                 </div>
             </div>
-
             <div class="comment-container">
-                    <div class="comment-image-container">
-                        <div><img src="img/user.jpeg" alt="user image" class="user-image"></div> 
-                        <p class="user-name">Francine</p>
-                    </div>
-                    <div class="user-comment">
-                        <div class="user-rate">
-                            <div><img src="img/stars.png" alt="stars" class="stars"></div>
-                            <p>09.29.2019</p>
-                        </div>
-                        
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, minima fugiat amet laudantium ut dolorum praesentium, exercitationem vero neque pariatur quo cumque. Ipsam laboriosam corrupti tempora est! Recusandae, explicabo minus.</p>
-                        <img class="review-img" src="img/review.jpg" alt="barcelona">
-                        <img class="review-img" src="img/review-img.jpg" alt="barcelona">
-                        <ul class="comment-reply">
-                                <li><a href="#">Reply</a></li>
-                                <li><a href="#">Like</a></li>
-                                <li><a href="#">Dislike</a></li>
-                            </ul>
-                    </div>
+                <div class="comment-image-container">
+                    <div><img src="img/user.jpeg" alt="user image" class="user-image"></div>
+                    <p class="user-name bold">Francine</p>
                 </div>
-
-                <div class="comment-container">
-                        <div class="comment-image-container">
-                            <div><img src="img/user.jpeg" alt="user image" class="user-image"></div> 
-                            <p class="user-name">Francine</p>
-                        </div>
-                        <div class="user-comment">
-                            <div class="user-rate">
-                                <div><img src="img/stars.png" alt="stars" class="stars"></div>
-                                <p>09.29.2019</p>
-                            </div>
-                            
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, minima fugiat amet laudantium ut dolorum praesentium, exercitationem vero neque pariatur quo cumque. Ipsam laboriosam corrupti tempora est! Recusandae, explicabo minus.</p>
-                            <img class="review-img" src="img/review.jpg" alt="barcelona">
-                            <img class="review-img" src="img/review-img.jpg" alt="barcelona">
-                            
-                            <ul class="comment-reply">
-                                <li><a href="#">Reply</a></li>
-                                <li><a href="#">Like</a></li>
-                                <li><a href="#">Dislike</a></li>
-                            </ul>
-                        </div>
+                <div class="user-comment">
+                    <div class="user-rate">
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i> 09.29.2019</p>
                     </div>
 
-                    <div class="comment-container comment">
-                            <div class="comment-image-container">
-                                <div><img src="img/user.jpeg" alt="user image" class="user-image user-comment-image"></div> 
-                                <p class="user-name name">Francine</p>
-                            </div>
-                            <div class="user-comment">
-                                <div class="user-rate">
-                                    <p>Rate:</p>
-                                    <div><img src="img/stars.png" alt="stars" class="user-rate-star stars"></div>
-                                </div>
-                                
-                                <div>
-                                    <textarea name="" id="" cols="80" rows="2" placeholder="Write a comment ..."></textarea>
-                                </div>
-                                
-                                <ul class="comment-edit">
-                                    <li><a class="btn" href="#"><i class="fas fa-paperclip"></i> Add a photo</a></li>
-                                    <li><a class="btn" href="#"><i class="far fa-paper-plane"></i> Send</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, minima fugiat amet laudantium ut
+                        dolorum praesentium, exercitationem vero neque pariatur quo cumque. Ipsam laboriosam corrupti
+                        tempora est! Recusandae, explicabo minus.</p>
+                    <img class="review-img" src="img/review.jpg" alt="barcelona">
+                    <img class="review-img" src="img/review-img.jpg" alt="barcelona">
+                    <ul class="comment-reply">
+                        <li><a class="bold" href="#"><i class="fas fa-reply"></i> Reply</a></li>
+                        <li><a class="bold" href="#"><i class="fas fa-thumbs-up"></i> Like</a></li>
+                        <li><a class="bold" href="#"><i class="fas fa-thumbs-down"></i> Dislike</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="comment-container">
+                <div class="comment-image-container">
+                    <div><img src="img/user.jpeg" alt="user image" class="user-image"></div>
+                    <p class="user-name bold">Francine</p>
+                </div>
+                <div class="user-comment">
+                    <div class="user-rate">
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i> 09.29.2019</p>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, minima fugiat amet laudantium ut
+                        dolorum praesentium, exercitationem vero neque pariatur quo cumque. Ipsam laboriosam corrupti
+                        tempora est! Recusandae, explicabo minus.</p>
+                    <img class="review-img" src="img/review.jpg" alt="barcelona">
+                    <img class="review-img" src="img/review-img.jpg" alt="barcelona">
+                    <ul class="comment-reply">
+                        <li><a class="bold" href="#"><i class="fas fa-reply"></i> Reply</a></li>
+                        <li><a class="bold" href="#"><i class="fas fa-thumbs-up"></i> Like</a></li>
+                        <li><a class="bold" href="#"><i class="fas fa-thumbs-down"></i> Dislike</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="comment-container">
+                <div class="comment-image-container">
+                    <div><img src="img/user.jpeg" alt="user image" class="user-image"></div>
+                    <p class="user-name bold">Francine</p>
+                </div>
+                <div class="user-comment">
+                    <div class="user-rate">
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i> 09.29.2019</p>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, minima fugiat amet laudantium ut
+                        dolorum praesentium, exercitationem vero neque pariatur quo cumque. Ipsam laboriosam corrupti
+                        tempora est! Recusandae, explicabo minus.</p>
+                    <img class="review-img" src="img/review.jpg" alt="barcelona">
+                    <img class="review-img" src="img/review-img.jpg" alt="barcelona">
+                    <ul class="comment-reply">
+                        <li><a class="bold" href="#"><i class="fas fa-reply"></i> Reply</a></li>
+                        <li><a class="bold" href="#"><i class="fas fa-thumbs-up"></i> Like</a></li>
+                        <li><a class="bold" href="#"><i class="fas fa-thumbs-down"></i> Dislike</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="comment-container comment">
+                <div class="comment-image-container">
+                    <div><img src="img/user.jpeg" alt="user image" class="user-image user-comment-image"></div>
+                    <p class="user-name name bold">Francine</p>
+                </div>
+                <div class="user-comment">
+                    <div class="user-rate">
+                        <p>Rate: <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                            class="far fa-star"></i><i class="far fa-star"></i></p>
+                    </div>
+
+                    <div>
+                        <textarea name="" id="" cols="80" rows="5" placeholder="Write a comment ..."></textarea>
+                    </div>
+
+                    <ul class="comment-edit">
+                        <li><a class="btn" href="#"><i class="fas fa-paperclip"></i> Add a photo</a></li>
+                        <li><a class="btn" href="#"><i class="far fa-paper-plane"></i> Send</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -310,4 +349,5 @@
         </ul>
     </footer>
 </body>
+
 </html>
