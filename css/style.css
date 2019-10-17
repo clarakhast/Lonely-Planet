@@ -160,7 +160,10 @@ svg {
     text-align:center;
     margin: 0 auto;
     text-shadow: 0.063em 0.063em black;
+}
 
+.intro-btn {
+    display: inline-block;
 }
 
 .button li {
@@ -182,7 +185,7 @@ svg {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap:4em;
-    padding: 3em 10em;;
+    padding: 3em 5em;
 }
 
 .top {
@@ -237,6 +240,7 @@ h4 .fa-star, .user-rate .fa-star {
 ***************************************/
 .flight-info li {
     display: inline-block;
+    font-size: 0.9em;
 }
 
 .flight-sub{
@@ -498,5 +502,9 @@ textarea{
 
     .barcelona-img {
         margin-top:1em;
+    }
+
+    .button {
+        display: none;
     }
 }
