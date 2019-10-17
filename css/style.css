@@ -6,6 +6,7 @@
 *{
     margin:0;
     padding:0;
+    box-sizing:border-box;
 }
 
 body{
@@ -23,16 +24,23 @@ h1, h2, h3, h4, h5, h6 {
 
 h1{
     font-size:3em;
+    margin:0;
 }
 
 h2{
     font-size:2.25em;
-    text-align: center;   
+    text-align: center; 
+    background: -webkit-linear-gradient(0deg, #d4418e 40%, yellow 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
 }
 
 h3{
     font-size:1.75em;
     text-align: center;
+    background: -webkit-linear-gradient(0deg, purple 40%, pink 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
 }
 
 h4{
@@ -41,11 +49,24 @@ h4{
 
 h5{
     font-size: 1em;
+    color: #FDD839;
 }
 
 a {
     text-decoration:none;
     color: #000;
+    font-weight:700;
+}
+
+.hover:hover {
+    background: -webkit-linear-gradient(0deg, #d4418e 40%, yellow 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+}
+
+.small {
+    font-size: 0.8em;
+    color: grey;
 }
 
 ul, ol{
@@ -56,17 +77,17 @@ li{
     padding: 1em;
 }
 
-button {
-    border:none;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 1em;
-}
 
 .book-btn, .btn {
-    background-color: #000;
+    background-color: #FDD839;
     color:#fff;
-    padding:1em;
+    padding:1em 2em;
+    border-radius:5em;
+    text-shadow: none;
+}
+
+.book-btn:hover, .btn:hover {
+    background-color:orange;
 }
 
 .bold {
@@ -77,6 +98,29 @@ button {
     font-style: italic;
 }
 
+.fa-bars{
+    color: white;
+}
+
+/* ************************************
+             HEADER
+***************************************/
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../img/beach.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom center;
+    height: 100vh;
+}
+
+svg {
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    overflow: visible;
+}
+
 
 /* ************************************
              NAVIGATION BAR
@@ -85,6 +129,10 @@ button {
     display:grid;
     grid-template-columns: 1fr 1fr;
     padding: 1em;
+}
+
+.nav-item {
+    color:#fff;
 }
 
 .menu-top {
@@ -104,51 +152,47 @@ button {
             INTRO SECTION
 ***************************************/
 .intro {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 2em;
-    background-color: #ccc;
-}
-
-.intro-img{
-    border-radius: 50%;
-    box-shadow: 0 0 1em #000;
-    margin-bottom: 1em;
-}
-
-.intro-container {
-    text-align: center;
+    padding: 0 2em;
+    color:#fff;
 }
 
 .intro-text {
-    align-self: center;
+    text-align:center;
+    margin: 0 auto;
+    text-shadow: 0.063em 0.063em black;
+
 }
 
 .button li {
     display:inline-block;
+    margin-top:1em;
 }
 
-.button li a{
-    background-color: #000;
-    color: #fff;
-    border: 0.1em solid #000;
-    padding: 0.5em; 
-    border-radius: 0.8em;
-}
 
 /* ************************************
             TOP PICKS SECTION
 ***************************************/
+.holiday-package{
+    position:relative;
+    z-index:5;
+    margin-top: -8em;
+}
+
 .holiday-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap:2em;
-    padding: 3em;
+    grid-gap:4em;
+    padding: 3em 10em;;
 }
 
 .top {
-    box-shadow: 0 0 1em #000;
+    box-shadow: 0 0 1.5em lavender;
     padding:1em 2em;
+    border-radius: 5em;
+}
+
+.feature-img p i {
+    color: purple;
 }
 
 /* ************************************
@@ -168,6 +212,11 @@ button {
     background-image:url(../img/star.png);
 }
 
+h4 .fa-star, .user-rate .fa-star {
+    color: #FDD839;
+    margin-left:0.5em;
+}
+
 .hotel-features {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -175,14 +224,12 @@ button {
 }
 
 .price-container{
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-    margin: 3em 0 2em 0;
+    margin: 2em 0;
+    text-align: center;
 }
 .price {
     font-size: 1.5em;
-    display:inline-block;
+    margin: 1.5em;
 }
 
 /* ************************************
@@ -213,21 +260,21 @@ button {
            TOURIST ATTRACTIONS
 ***************************************/
 .about-barcelona{
-    padding: 2rem 4rem;
-    background-color:#ccc;
+    background-color:#faf1e9;
+    padding: 1em 2em 4em 2em;
 }
 .about-content{
     display:grid;    
     grid-template-columns: 1fr 1fr;
+    grid-gap:1em;
 }
 
-.img-container{
-    text-align: center;
+.about-text {
+    padding-top: 1em;
 }
 
-.barcelona-img{
-    border-radius:50%;
-    box-shadow: 0 0 0.5em #000;
+.barcelona-img {
+    width:100%;
 }
 
 /* ************************************
@@ -256,13 +303,14 @@ button {
 }
 
 .user-image {
-    max-height: 5rem;
+    max-height: 4rem;
     border-radius: 50%;
+    box-shadow: 0 0 0.5em lavender;
 
 }
 
 .user-name{
-    padding-top: 2rem;
+    padding-top: 1.2rem;
 }
 
 .user-comment>p {
@@ -278,11 +326,13 @@ button {
 }
 
 ::placeholder{
-    padding: 0.5rem;
+    padding: 1rem;
+    font-family: lato;
 }
 
 textarea{
     width: 100%;
+    border-radius: 1em;
 }
 
 .comment-edit li {
@@ -294,81 +344,95 @@ textarea{
     text-align: right;
 }
 
+.user-rate {
+    margin-bottom:1em;
+}
+
 /* ************************************
                 FOOTER
 ***************************************/
 
 .footer {
-    background-color: #ccc;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/sunset.jpg);
+    background-size:cover;
+    background-attachment: fixed;
     padding: 2em 0;
+    text-align: center;
 }
 
-footer ul li {
+.social-media-list li, .refund li, .policy li {
+    display: inline-block;
     padding:0;
-    margin:0;
+    margin: 0.5em;
 }
 
-.footer ul li a{
-    font-size: 0.8rem;
-    justify-self: center;
-
+.social-media i{
+    background-color: #FDD839;
+    border-radius: 100%;
+    padding: 1em 1.1em;
 }
 
-.footer ul{
-    margin: 0 auto;
+.refund li a, .policy li a {
+    color: #fff;
+    font-weight: 400;
 }
 
+.policy li a{
+    font-size: 0.8em;
+    padding-right: 0.8em;
+}
+.policy li:not(:last-child) {
+    border-right: 1px solid white;
+}
+
+.copyright {
+    background-color:#FDD839;
+    margin-top: 1em;
+    padding: 2em;
+}
+
+.copyright p {
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+.fa-heart {
+    color: purple;
+}
 
 
 /* ************************************
              MEDIA QUERIES
 ***************************************/
-@media screen and (max-width: 60em){
+@media screen and (max-width: 65em){
+    p{
+        font-size: 1.1em;
+        line-height:1.7em;
+    }
     .menu-top{
         display:none;
     }
 
     .nav-menu {
         display:contents;
-        text-align:right;;
+        text-align:right;
     }
 
     .nav-menu a{
         padding: 0.8em;
     }
 
-    .intro {
-        display: block;
-        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../img/barcelona.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position:top center;
-        background-attachment: fixed;
-        color:#fff;
-    }
-
-    .intro-container {
-        display:none;
-    }
-
     .holiday-container {
         display:block;
+        padding: 2em;
     }
 
     .top {
-        box-shadow: none;
+        margin-bottom: 1em;
     }
 
     .about-content {
         display:block;
-    }
-
-    .barcelona-img {
-        border-radius: 0;
-        box-shadow: none;
-        width:100%;
     }
 
     .about-barcelona {
@@ -376,8 +440,63 @@ footer ul li {
     }
 
     .review {
-        padding: 0.5rem 0;
+        padding: 1em;
         max-width: 100%;
         margin: 0 auto;
+    }
+
+    .user-name {
+        padding-left: 0.5em;
+    }
+}
+
+@media screen and (max-width: 40em){
+
+    .holiday-container {
+        display:block;
+        padding: 1em 0;
+    }
+
+    .top {
+        margin-bottom: 1em;
+        box-shadow:none;
+        border:none;
+        border-radius: 0;
+    }
+
+    .holiday-package {
+        margin-top: -5em;
+    }
+
+    .hotel {
+        background-color:lavender;
+    }
+
+    .review-img {
+        max-height: 5em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.8em;
+        margin: 0.1em;
+
+    }
+
+    .comment-container{
+        display:block;
+    }
+    .comment-image-container{
+        display: flex;
+    }
+
+    footer {
+        font-size: 0.7em;
+    }
+
+    .barcelona-img {
+        margin-top:1em;
     }
 }
