@@ -158,8 +158,12 @@ svg {
 
 .intro-text {
     text-align:center;
-    margin: 10em auto;
     text-shadow: 0.063em 0.063em black;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 50vh;
 
 }
 
