@@ -90,6 +90,11 @@ li{
     background-color:orange;
 }
 
+.book-btn {
+    width:100%;
+    display: block;
+}
+
 .bold {
     font-weight: 700;
 }
@@ -194,9 +199,9 @@ svg {
 .holiday-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap:4em;
+    grid-gap:2em;
     margin: 0 auto;
-    padding:2em 2em 4em 2em;
+    padding:2em 3em 4em 3em;
 }
 
 .top {
@@ -277,7 +282,7 @@ h4 .fa-star, .user-rate .fa-star {
 }
 
 /* ************************************
-           TOURIST ATTRACTIONS
+           ABOUT BARCELONA
 ***************************************/
 .about-barcelona{
     background-color:#faf1e9;
@@ -291,6 +296,10 @@ h4 .fa-star, .user-rate .fa-star {
 
 .about-text {
     padding-top: 1em;
+}
+
+.about-text p + p {
+    margin-top: 0.8em;
 }
 
 .barcelona-img {
@@ -460,11 +469,13 @@ textarea{
     }
 
     .about-content {
-        display:block;
+        display: flex;
+        flex-direction: column-reverse;
+
     }
 
     .about-barcelona {
-        padding: 2rm;
+        padding: 1em;
     }
 
     .review {
@@ -497,7 +508,7 @@ textarea{
     }
 
     .hotel {
-        background-color:lavender;
+        background-color:#faf1e9;
     }
 
     .review-img {
